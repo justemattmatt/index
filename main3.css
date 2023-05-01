@@ -1,0 +1,61 @@
+/*! CSS Used from: http://127.0.0.1:5500/assets/css/main.css */
+body,div,h1,h2,p,img,ul,li,table,tbody,tr,td,nav,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+body{color:rgba(255, 255, 255, 0.55);font-family:Arial, Helvetica, sans-serif;font-size:13pt;font-weight:normal;line-height:1.75;}
+p{margin:0 0 2em 0;}
+h1,h2{color:#ffffff;font-weight:bold;line-height:1.5;margin:0 0 0.5em 0;}
+h1{font-size:2.75em;}
+h2{font-size:1.75em;}
+
+/* bouton */
+.button{border:solid 1px;border-color:rgba(255, 255, 255, 0.15);border-radius:3em;color:#ffffff;display:inline-block;font-size:0.6em;font-weight:bold;letter-spacing:0.25em;line-height:4.75em;padding:0 3.75em;position:relative;text-align:center;text-decoration:none;text-transform:uppercase;}
+.button:after{content:'';transform:scale(0.25);transition:opacity 0.2s ease, transform 0.2s ease;background:white;border-radius:3em;height:100%;left:0;opacity:0;position:absolute;width:100%;}
+.button:disabled{cursor:default;opacity:0.5;pointer-events:none;}
+.button:hover{border-color:rgba(255, 255, 255, 0.55);}
+.button:hover:after{opacity:0.05;transform:scale(1);}
+.button:hover:active{border-color:#ffffff;}
+.button:hover:active:after{opacity:0.1;}
+
+
+
+
+ul.actions{list-style:none;margin-left:-1em;}
+ul.actions li{padding:0 0 5em 1em;vertical-align:middle;}
+
+.spotlights > section{display:flex;min-height:22.5em;}
+.spotlights > section > .image{background-size:cover;width:525px;}
+.spotlights > section > .content{padding:4em 3em 2em 5em;width:50em;}
+.spotlights > section > .content > .inner{transition:opacity 1s ease, transform 1s ease;}
+.spotlights > section:nth-child(2){background-color:rgba(0, 0, 0, 0.1);}
+.spotlights > section:nth-child(3){background-color:rgba(0, 0, 0, 0.2);}
+.spotlights > section.inactive > .content > .inner{transform:translateX(-1em);opacity: 0;}
+
+
+table{width:100%;}
+table td{padding: 0 12em 0 0;}
+
+.wrapper > .inner{padding:5em 0 3em 5em;width:50em;}
+.wrapper.style1{background-color:#5e42a6;}
+.wrapper.style2{background-color:#5052b5;}
+.wrapper.style3{background-color:#b74e91;}
+
+.wrapper.fade-up .inner{transform:translateY(0);transition:opacity 1s ease, transform 1s ease;}
+.wrapper.fade-up.inactive > .inner{opacity:0;transform:translateY(1em);}
+#wrapper{margin-left:18em;}
+
+#sidebar{background:#312450;height:100vh;position:fixed;text-align:right;width:18em;}
+#sidebar .inner{display:flex;flex-direction:column;justify-content:center;transform:translateY(0);transition:opacity 1s ease;min-height:100%;opacity:1;width:100%;}
+#sidebar nav ul{list-style:none;padding:60px;width:225px;}
+#sidebar nav ul > li{margin:1.5em 0 0 0;position: relative;}
+#sidebar nav a{transition:color 0.2s ease;color:rgba(255, 255, 255, 0.35);display:block;font-size:0.6em;font-weight:bold;letter-spacing:0.25em;line-height:1.75;padding:1.35em 0;text-decoration:none;text-transform:uppercase;}
+#sidebar nav a.active{color:#ffffff;}
+#sidebar nav a:before,#sidebar nav a:after{content:'';border-radius:1em;bottom:0;height:0.2em;position:absolute;right:0;width:100%;}
+#sidebar nav a:before{background:#3c2c62;}
+#sidebar nav a:after{background-image:linear-gradient(to right, #5e42a6, #b74e91);transition:max-width 0.2s ease;max-width:0;}
+#sidebar nav a:hover{color:rgba(255, 255, 255, 0.55);}
+#sidebar nav a.active:after{max-width:100%;}
+
+
+#intro{background-attachment:fixed;background-image:url("images/intro.svg");background-size:100%;}
+#intro p{font-size:1.25em;width:1030px}
+
+
